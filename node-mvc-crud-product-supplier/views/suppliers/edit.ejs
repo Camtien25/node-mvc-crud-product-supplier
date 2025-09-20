@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉnh sửa nhà cung cấp</title>
+</head>
+
+<body>
+    <h1>Chỉnh sửa thông tin</h1>
+    <form action="/suppliers/<%= supplier._id %>?_method=POST" method="POST">
+        <label>Tên:</label><br>
+        <input type="text" name="name" value="<%= supplier.name %>" required><br><br>
+
+        <label>Địa chỉ:</label><br>
+        <input type="text" name="address" value="<%= supplier.address %>"><br><br>
+
+        <label>Số điện thoại:</label><br>
+        <input type="text" name="phone" value="<%= supplier.phone %>"><br><br>
+
+        <button type="submit">Cập nhật</button>
+    </form>
+
+    <a href="/suppliers">⬅ Quay lại danh sách</a>
+</body>
+
+</html>

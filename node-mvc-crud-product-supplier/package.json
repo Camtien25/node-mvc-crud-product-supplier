@@ -1,0 +1,24 @@
+{
+    "name": "mvc-crud-product-supplier",
+    "version": "1.0.0",
+    "description": "CRUD app for Supplier and Product using Node.js, Express, MongoDB, Mongoose (MVC pattern)",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon ./app.js",
+        "dev": "nodemon ./app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^2.2.0",
+        "dotenv": "^17.2.2",
+        "ejs": "^3.1.10",
+        "express": "^4.21.2",
+        "method-override": "^3.0.0",
+        "mongoose": "^8.18.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
+}

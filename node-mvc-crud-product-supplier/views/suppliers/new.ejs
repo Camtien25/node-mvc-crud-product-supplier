@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm nhà cung cấp</title>
+</head>
+
+<body>
+    <h1>Thêm nhà cung cấp mới</h1>
+    <form action="/suppliers" method="POST">
+        <label>Tên:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Địa chỉ:</label><br>
+        <input type="text" name="address"><br><br>
+
+        <label>Số điện thoại:</label><br>
+        <input type="text" name="phone"><br><br>
+
+        <button type="submit">Lưu</button>
+    </form>
+
+    <a href="/suppliers">⬅ Quay lại danh sách</a>
+</body>
+
+</html>

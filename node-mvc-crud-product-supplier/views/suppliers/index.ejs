@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Suppliers List</title>
+</head>
+
+<body>
+    <h1>Danh sách nhà cung cấp</h1>
+    <ul>
+        <% suppliers.forEach(supplier => { %>
+            <li>
+                <strong><%= supplier.name %></strong> -
+                <%= supplier.address %> -
+                    <%= supplier.phone %>
+            </li>
+            <% }) %>
+    </ul>
+
+    <a href="/suppliers/new">Thêm nhà cung cấp mới</a>
+</body>
+
+</html>
